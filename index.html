@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Card App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Term & Definition → Flashcards</h2>
+        <div class="inputs">
+            <div>
+                <p>Term</p>
+                <input type="text" id="termInput" placeholder="Example: Variable">
+            </div>
+            <div>
+                <p>Definition</p>
+                <textarea id="definitionInput" placeholder="Example: A container that stores a value."></textarea>
+            </div>
+        </div>
+        <button class="save" onclick="save()">Save Term</button>
+        <button onclick="generate()">Generate Flashcards</button>
+        <button onclick="clearCards()">Clear All</button>
+        <p class="tip">Tip: Click a flashcard to flip it</p>
+
+        <div class="display" id="display"></div>
+
+        
+    </div>
+</body>
+</html>
